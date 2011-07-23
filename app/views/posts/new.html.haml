@@ -1,0 +1,13 @@
+%h1 Add a post
+
+= form_for post do |f|
+  = f.label :title
+  = f.text_field :title
+  = f.label :author
+  = f.text_field :author
+  = f.label :caption
+  = f.text_field :caption
+  = f.label :image
+  = f.text_field :image
+  %p Please use a link directly to the image.
+  = f.submit "Post It"

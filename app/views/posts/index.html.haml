@@ -1,0 +1,10 @@
+%h1 Rails 3.1 Hackfest Stream
+
+= link_to 'Add a post', [:new, :post]
+
+- posts.each do |post|
+  %h2.title= post.title
+  .image
+    = image_tag post.image
+  %caption= post.caption
+  %p Uploaded By: #{post.author}
